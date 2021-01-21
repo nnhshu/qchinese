@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
+.swiper-wrapper {
+    transition-duration: 1.2s!important;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+p,
+span {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.q-logo img {
+    width: 200px;
+}
+
+.q-intro {
+    position: relative;
+}
+
+.q-intro .q-cover {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.q-login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.q-user {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.q-user .btn-signup {
+    margin-bottom: 10px;
+    background: #3966b0;
+    color: #ffff;
+}
+
+.q-user .btn-login {
+    background: #43708f;
+    color: #fff;
+}
+
+.q-study {
+    height: 100vh;
+}
+
+.q-study__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #8054f1;
+    color: #ffff;
+}
+
+.text-container {
+    padding-top: 50px;
+}
+
+.q-study__container h2 {
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+
+.q-study__container p,
+.q-study__container span {
+    font-size: 18px;
+    line-height: 1.5em;
+    display: block;
+}
+
+.q-study__container span i {
+    margin-right: 10px;
+}
+
+.li-space-lg li {
+    margin-bottom: 20px;
+}
+
+.q-learning__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: #fbe6a3;
+    color: #ffff;
+}
+
+.q-learning__container h2 {
+    margin-bottom: 30px;
+    font-size: 54px;
+}
+
+.pg-wrapper{
+    overflow-x: hidden;
+}
+
+.anchors {
+    position: fixed;
+    top: 25px;
+    right: 50px;
+    z-index: 100;
+}
+
+.anchors ul {
+    margin: 0;
+    padding: 0;
+}
+
+.anchors ul li {
+    float: left;
+    list-style: none;
+}
+
+.anchors ul li a {
+    padding: 12px;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+
+.anchors ul li a.active::after {
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    content: "";
+}
+
+.pg-page {
+    transform: scale(0.9, 0.9);
+    transition: all 500ms;
+}
+
+.pg-page.pg-active {
+    transform: scale(1, 1);
+}
+
+.pg-pips {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg-pips ul li a span {
+    background: #000;
+}
+
+.pg-pips li {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 16px;
+    position: relative;
+}
+
+.pg-pips span:after {
+    background: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    content: "";
+    display: block;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.pg-pips li .active span {
+    background: #000;
+    position: absolute;
+}
+
+.pg-pips li .active span:after {
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+}
+
+.pg-pips ul {
+    margin: 0;
+    padding: 0;
+}
+
+.pg-pips ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position: relative;
+}
+
+.pg-pips ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.pg-pips ul li a.active span,
+.pg-pips ul li:hover a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+
+.pg-pips ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #000;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    transition: all 0.1s ease-in-out;
+}
+
+.pg-pips ul li:hover a span {
+    width: 10px;
+    height: 10px;
+    margin: -5px 0px 0px -5px;
+}
